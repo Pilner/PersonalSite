@@ -9,7 +9,14 @@ body {
 	background-color: #1d1d1d;
 	color: #DFDFDF;
 }
+.altcard {
+	color: #1d1d1d;
+}
 
+.card {
+	border-radius: 20px;
+	background-color: aliceblue;
+}
 
 .brighten {
 	background-color: aliceblue;
@@ -32,7 +39,12 @@ body {
 		text-align: center;
 		margin: 2.5em 0;
 	}
-	
+	.work-card {
+		display: block;
+	}
+	.work-card .card {
+		margin-top: 10em;
+	}
 }
 
 a {
@@ -78,7 +90,14 @@ a:hover {
 /* WORKPAGE */
 /* WORKPAGE */
 
-
+/* INTRODUCTION */
+ul {
+	list-style: none;
+}
+ul li {
+	margin-top: 2em;
+}
+/* INTRODUCTION */
 
 /* TOOLS */
 .logoitems {
@@ -103,7 +122,8 @@ a:hover {
 	height: 1em;
 }
 .btn:hover .melodynityicon {
-	-webkit-filter: invert(100%)
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
 }
 .melodynitybtns .btn-outline-dark:nth-child(2):hover {
 	background-color: #FE5000;
@@ -117,7 +137,43 @@ a:hover {
 /* MELODYNITY */
 
 
+/* CONTACT */
+.contacts-grid {
+	background-color: aliceblue;
+	padding: 3em 0;
+	border-radius: 20px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
 
+.alt-contacts-grid {
+	padding: 3em 0;
+	border-radius: 20px;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.visible {
+	display:inline-block;
+	width: 15em;
+	animation: fadeIn 0.5s ease-in-out;
+}
+.invisible {
+	display: none;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	/* animation: fadeIn 0.5s; */
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* CONTACT */
 
 
 

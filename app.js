@@ -17,7 +17,7 @@ app.get("/", (req, res) => {
 	try {
 		res.render("home");
 	} catch(err) {
-		res.send("You have an error!");
+		res.render("errorpage");
 		console.log(err);
 	}
 })
@@ -26,9 +26,22 @@ app.get("/about", (req, res) => {
 	try {
 		res.render("about");
 	} catch(err) {
-		res.send("You have an error!");
+		res.render("errorpage");
 		console.log(err);
 	}
+})
+
+app.get("/contact", (req, res) => {
+	try {
+		res.render("contact");
+	} catch (err) {
+		res.render("errorpage");
+		console.log(err);
+	}
+})
+
+app.get("*", (req, res) => {
+	res.send("Invalid Domain");
 })
 
 

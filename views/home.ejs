@@ -36,7 +36,7 @@
 			</button>
 		
 			<div class="collapse navbar-collapse" id="navbarsExample07XL">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 ml-auto">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 ml-auto text-center">
 					<li class="nav-item">
 						<a class="nav-link active" aria-current="page" href="/">Home</a>
 					</li>
@@ -44,7 +44,7 @@
 						<a class="nav-link" href="/about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+						<a class="nav-link" href="/contact" tabindex="-1" aria-disabled="true">Contact</a>
 					</li>
 				</ul>
 		  	</div>
@@ -52,21 +52,20 @@
 	</nav>
 	<!-- NAVBAR -->
 		
-
 	<!-- MAIN PAGE -->
 	<div class="container">
 		<div class="text-center">
 			<img class="mainlogo" src="/pics/site-logo/FRV-4LOGO.png" alt="Main Logo">
 		</div>
 		<p class="display-2 pt-2 text-center">Hi! I'm Railey</p>
-		<p class="pt-1 pb-4 lead text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero tempora amet modi velit?</p>
+		<p class="pt-1 pb-4 lead text-center">A programmer is one that can do things in many ways.</p>
 		<div class="text-center">
 			<!-- <img class="m-auto" src="/pics/melodynitylogo.png" alt=""> -->
 
 		</div>
 	</div>
 	<!-- MAIN PAGE -->
-
+	
 	
 	<!-- WORKS -->
 	<div class="altcolor">
@@ -74,15 +73,27 @@
 			<div>
 				<p class="h1">Some of My Works</p>
 			</div>
-			<div class="row mt-5">
-				<div class="col">
-					<div class="text-center">
-						<p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laudantium nihil reiciendis id eaque quam odit alias similique fugiat, illum, illo vero doloremque sunt corrupti iste perspiciatis! Deserunt tempora nostrum impedit, ex facilis fugit, neque aliquid possimus voluptate, quibusdam vitae optio ut illum quis libero unde inventore itaque nulla voluptatem.</p>
+			<div class="row mt-5 work-card">
+				<div class="col px-0">
+					<div class="container text-center">
+						<div class="altcard card pt-3" style="margin: auto;">
+							<img class="card-img-top" src="/pics/site-logo/FRV-4LOGO.png" alt="Card image cap" style="margin: auto;width: 50%;">
+							<div class="card-body">
+							  <h5 class="card-title">Personal Porfolio Website</h5>
+							  <p class="card-text">My Personal Website that acts as my credentials.</p>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="col">
-					<div class="text-center">
-						<p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt laudantium nihil reiciendis id eaque quam odit alias similique fugiat, illum, illo vero doloremque sunt corrupti iste perspiciatis! Deserunt tempora nostrum impedit, ex facilis fugit, neque aliquid possimus voluptate, quibusdam vitae optio ut illum quis libero unde inventore itaque nulla voluptatem.</p>
+				<div class="col px-0">
+					<div class="container text-center">
+						<div class="altcard card pt-3" style="margin: auto;">
+							<img class="card-img-top" src="/pics/melodynityICON.png" alt="Card image cap" style="margin: auto;width: 50%;">
+							<div class="card-body">
+							  <h5 class="card-title">Melodynity Website</h5>
+							  <p class="card-text">A website for my music.</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -97,9 +108,14 @@
 	<!-- INTRODUCTION -->
 	<div class="intropage">
 		<div class="container p-5">
-			<div class="text-center">
-				<p class="display-5">Enough About That. Introduce Yourself!</p>
-				<p class="h5 mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, distinctio dolores esse tenetur, optio est exercitationem ex natus in incidunt voluptatem cum culpa blanditiis dignissimos magni sunt explicabo fuga! Corrupti amet maiores ipsum rerum quo atque distinctio debitis labore repudiandae sunt unde rem odit magnam officia neque, numquam, exercitationem quaerat!</p>
+			<div class="">
+				<p class="text-center display-5">Enough About That. Introduce Yourself!</p>
+				<ul class="h5 mt-5">
+					<li>My name is Fabian Railey Victuelles! A programmer based in the Philippines</li>
+					<li>I am a first-year student from the Polytechnic University of the Philippines studying BS Computer Science</li>
+					<li>I am a programmer that can code on languages like JavaScript, C++, Python, and C. I can also do Full-Stack as a Web Developer with the MEN stack (MongoDB, Express.js, Node.js). I am what they call an enthusiastic coder who focuses on what needed to be fixed and developed with no loose threads attached.</li>
+					<li>I like coding.</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -158,7 +174,7 @@
 				<img src="/pics/melodynitylogo.png" alt="Melodynity Logo">
 			</div>
 			<div class="text-center melodynitybtns">
-				<button class="btn btn-outline-dark mx-2"><a href="#"><img class="melodynityicon pe-2 mb-1" src="/pics/melodynityICON.png">Website</a></button>
+				<button id="mdm-website" class="btn btn-outline-dark mx-2 " data-bs-toggle="popover" data-bs-placement="top" data-bs-content="There is no website yet, but you can go and check at my GitHub!"><img class="melodynityicon pe-2 mb-1" src="/pics/melodynityICON.png">Website</button>
 				<button class="btn btn-outline-dark mx-2"><a href="https://soundcloud.com/melodynity"><i class="fab fa-soundcloud pe-2"></i>Soundcloud</a></button>
 				<button class="btn btn-outline-dark mx-2"><a href="https://www.youtube.com/channel/UCQhfkcqH3_9t-DItavYGtqw"><i class="fab fa-youtube pe-2"></i>Youtube</a></button>
 			</div>
@@ -189,7 +205,7 @@
 		<div class="container p-5">
 			<div class="footertext text-center">
 				<img class="navlogo mb-1" src="/pics/site-logo/FRV-4LOGO.png" alt="">
-				<p class="mt-1"><b>&copy; 2022 Copyright: <a href="/">raileyvic.com</a></b></p>
+				<p class="mt-1"><b>&copy; 2022 Copyright: <a href="/"></a></b></p>
 
 			</div>
 		</div>
