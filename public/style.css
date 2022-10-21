@@ -221,9 +221,11 @@ a:hover {
 }
 
 .hero-page > .container {
+	/* border: 1px solid black; */
 	height: 100%;
-	display: grid;
-	place-items: center;
+	display: flex;
+	align-items: center;
+	justify-items: center;
 }
 
 .hero-page .container .parallax-container div > p.hero-title {
@@ -239,7 +241,7 @@ a:hover {
 	width: 100%;
 }
 
-.hero-page .container div img.hero-logo {
+.hero-page .container .parallax-container div img.hero-logo {
 	height: 20em;
 }
 

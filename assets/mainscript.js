@@ -13,6 +13,13 @@ let button = document.querySelectorAll(".contact .container .contact-dark .wrapp
 });
 
 
+// PARALLAX.JS
+var scene = [document.getElementById("hero-scene")];
+
+scene.forEach((item) => {
+	new Parallax(item);
+});
+
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		console.log(entry);
