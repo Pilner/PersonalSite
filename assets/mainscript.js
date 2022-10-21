@@ -13,3 +13,19 @@ let button = document.querySelectorAll(".contact .container .contact-dark .wrapp
 });
 
 
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		console.log(entry);
+		if (entry.isIntersecting) {
+			if (entry.target.classList.contains("hidden")) {
+				entry.target.classList.add("show");
+			} else if (entry.target.classList.contains("hidden-slide")) {
+				entry.target.classList.add("show-slide");
+			}
+		}
+	});
+});
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));
+const hiddenElementsSlide = document.querySelectorAll(".hidden-slide");
+hiddenElementsSlide.forEach((el) => observer.observe(el));

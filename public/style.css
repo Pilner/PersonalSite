@@ -167,6 +167,29 @@ a:hover {
 }
 /* SPACER */
 
+/* SCROLL ANIMATION */
+.hidden {
+	opacity: 0;
+	filter: blur(2px);
+	transition: 1s;
+}
+.show {
+	filter: blur(0);
+	opacity: 1;
+}
+
+.hidden-slide {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateX(-100%);	
+	transition: all 1s ease-out;
+}
+.show-slide {
+	transform: translateX(0);
+	filter: blur(0);
+	opacity: 1;
+}
+/* SCROLL ANIMATION */
 
 
 
