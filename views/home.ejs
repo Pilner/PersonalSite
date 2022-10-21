@@ -7,206 +7,268 @@
 
 	<title>Railey Victuelles | Web Developer</title>
 
-	<link rel=icon href=/pics/site-logo/favicon-FRV-LOGO.png type="image/png">
+	<link rel=icon href="/pics/site-logo/favicon-FRV-LOGO.png" media="(prefers-color-scheme: light)" type="image/png">
+
+	<link rel=icon href="/pics/site-logo/FRV-logo-light.png" media="(prefers-color-scheme: dark)" type="image/png">
 
 	<!-- GOOGLE FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<!-- GOOGLE FONTS -->
 	
-	<!-- BOOTSTRAP 5 -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<!-- BOOTSTRAP 5 -->
+	<!-- BOOTSTRAP 5.2.0 -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+	<!-- BOOTSTRAP 5.2.0 -->
 	
 	<!-- FONT AWESOME -->
 	<script src="https://kit.fontawesome.com/ad98de5722.js" crossorigin="anonymous"></script>
 	<!-- FONT AWESOME -->
 	<link rel="stylesheet" href="style.css">
-	
 </head>
 <body>
-
-	<!-- NAVBAR -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light mb-5" aria-label="Ninth navbar example">
-		<div class="container-xl">
-			<a class="navbar-brand" href="/"><img class="navlogo" src="/pics/site-logo/FRV-4LOGO.png"></img></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
 		
-			<div class="collapse navbar-collapse" id="navbarsExample07XL">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0 ml-auto text-center">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="/">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="/contact" tabindex="-1" aria-disabled="true">Contact</a>
-					</li>
-				</ul>
-		  	</div>
-		</div>
-	</nav>
-	<!-- NAVBAR -->
-		
-	<!-- MAIN PAGE -->
-	<div class="container">
-		<div class="text-center">
-			<img class="mainlogo" src="/pics/site-logo/FRV-4LOGO.png" alt="Main Logo">
-		</div>
-		<p class="display-2 pt-2 text-center">Hi! I'm Railey</p>
-		<p class="pt-1 pb-4 lead text-center">A programmer is one that can do things in many ways.</p>
-		<div class="text-center">
-			<!-- <img class="m-auto" src="/pics/melodynitylogo.png" alt=""> -->
+	<!-- HERO SECTION -->
+	<section class="hero-page">
+		<div class="container">
+			<div>
 
+				<img class="hero-logo" src="/pics/site-logo/FRV-4LOGO.png" alt="Hero Logo">
+				<p class="hero-title">Hi! I'm Railey</p>
+				<p class="hero-text">"A programmer is one that can do things in many ways."</p>
+			</div>
 		</div>
-	</div>
-	<!-- MAIN PAGE -->
+
+	</section>
+	<!-- HERO SECTION -->
 	
 	
 	<!-- WORKS -->
-	<div class="altcolor">
-		<div class="container p-5">
-			<div>
-				<p class="h1">Some of My Works</p>
+	<section class="works">
+		<div class="spacer-1"></div>
+		<p class="alt-topic-title">Some of My Works</p>
+		<div class="container">
+			<div class="grid-container">
+				<div class="grid-item">
+					<div class="works-img">
+						<img src="/pics/site-logo/FRV-4LOGO.png" alt="">
+					</div>
+					<div class="works-text">
+						<div>
+							<p class="body-title">Personal Portfolio Website</p>
+							<p class="body-text">My personal website that acts as my credentials.</p>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="works-img">
+						<img src="/pics/melodynityICON.png" alt="">
+					</div>
+					<div class="works-text">
+						<p class="body-title">Melodynity Website</p>
+						<p class="body-text">A website for my music.</p>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="works-img">
+						<img src="/pics/site-logo/FRV-4LOGO.png" alt="">
+					</div>
+					<div class="works-text">
+						<div>
+							<p class="body-title">Personal Portfolio Website</p>
+							<p class="body-text">My personal website that acts as my credentials.</p>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item">
+					<div class="works-img">
+						<img src="/pics/melodynityICON.png" alt="">
+					</div>
+					<div class="works-text">
+						<p class="body-title">Melodynity Website</p>
+						<p class="body-text">A website for my music.</p>
+					</div>
+				</div>
 			</div>
-			<div class="row mt-5 work-card">
-				<div class="col px-0">
-					<div class="container text-center">
-						<div class="altcard card pt-3" style="margin: auto;">
-							<img class="card-img-top" src="/pics/site-logo/FRV-4LOGO.png" alt="Card image cap" style="margin: auto;width: 50%;">
-							<div class="card-body">
-							  <h5 class="card-title">Personal Porfolio Website</h5>
-							  <p class="card-text">My Personal Website that acts as my credentials.</p>
+			<div class="works-buttons">
+					<a href="#" class="button-light">
+						<i class="fas fa-eye pe-2"></i> View All
+					</a>
+					<a href="https://github.com/Pilner" class="button-light" target="_blank" rel="noopener noreferrer">
+						<i class="fab fa-github pe-2"></i> Github
+					</a>
+			</div>
+		</div>
+		<div class="spacer-2"></div>
+	</section>
+	<!-- WORKS -->
+	
+	
+	
+	<!-- INTRODUCTION -->
+	<secion class="introduction">
+		<p class="topic-title">Enough About That. Introduce Yourself!</p>
+		<div class="container">
+			<div class="grid-container">
+				<div class="grid-item">
+					<p class="body-text">Hi! My name is Fabian Railey Victuelles! A programmer based in the Philippines.</p>
+					<p class="body-text">I am a first-year student from the Polytechnic University of the Philippines studying BS Computer Science.</p>
+					<p class="body-text">I am a programmer that can code on languages like JavaScript, C, and C++. I can also do Full-Stack as a Web Developer with the <span data-popover="(MongoDB, Express.js, Node.js)">M-E-N</span> stack. I am what they call an enthusiastic coder who focuses on what needed to be fixed and developed with no loose threads attached.</p>
+					<p class="body-text">I like coding.</p>
+				</div>
+				<div class="grid-item">
+					<img src="/pics/self-pictures/introduction-pic2.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</secion>
+	<!-- INTRODUCTION -->
+
+	<!-- TOOLS -->
+	<section class="tools">
+		<div class="spacer-1"></div>
+		<p class="alt-topic-title">Proficient in:</p>
+		<div class="container">
+			<div class="grid-container-img">
+				<div class="grid-item">
+					<a href="https://nodejs.org/en/" target="_blank">
+						<img class="tool-items" src="/pics/nodejs.svg" alt="nodejs">
+					</a>
+				</div>
+				<div class="grid-item">
+					<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+						<img class="tool-items" src="/pics/jquery.png" alt="jquery">
+					</a>
+				</div>
+				<div class="grid-item">
+					<a href="https://www.mongodb.com/" target="_blank">
+						<img class="tool-items" src="/pics/mongodb.svg" alt="mongodb">
+					</a>
+				</div>
+				<div class="grid-item">
+					<a href="https://www.open-std.org/jtc1/sc22/wg14/" target="_blank">
+						<img class="tool-items" src="/pics/c.svg" alt="C">
+					</a>
+				</div>
+				<div class="grid-item">
+					<a href="https://cplusplus.com/" target="_blank">
+						<img class="tool-items" src="/pics/cpp.svg" alt="C++">
+					</a>
+				</div>
+			</div>
+			<div class="grid-container-body">
+				<div class="grid-item">
+					<ul>
+						<li class="body-text">Studied from Colt Steele's Web Developer Bootcamp.</li>
+						<li class="body-text">Has a vast knowledge on how APIs work.</li>
+					</ul>
+				</div>
+				<div class="grid-item">
+					<ul>
+						<li class="body-text">Can do things using the MEN Stack</li>
+						<li class="body-text">Can easily convert Vanilla JavaScript to JQuery and vice versa</li>
+					</ul>
+
+				</div>
+				<div class="grid-item">
+					<ul>
+						<li class="body-text">Studied from Colt Steele's Web Developer Bootcamp</li>
+						<li class="body-text">Able to implement CRUD API</li>
+					</ul>
+
+				</div>
+				<div class="grid-item">
+					<ul>
+						<li class="body-text">Taken lessons in Computer Programming classes</li>
+					</ul>
+
+				</div>
+				<div class="grid-item">
+					<ul>
+						<li class="body-text">Likes to do Competitive Programming on free time.</li>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- TOOLS -->
+
+	<!-- CONTACT -->
+	<section class="contact">
+		<div class="container">
+			<div class="contact-light">
+				<div>
+					<p class="topic-title">Contact me:</p>
+				</div>
+				<div>
+					<div class="grid-container">
+						<div class="grid-item">
+							<div class="contact-img">
+								<img src="/pics/contacts/github.png" alt="GitHub Profile">
+							</div>
+							<div class="contact-body">
+								<p class="alt-body-title">Github</p>
+								<a href="https://github.com/Pilner" class="button-light" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github</a>
+							</div>
+						</div>
+						<div class="grid-item">
+							<div class="contact-img">
+								<img src="/pics/contacts/linkedin.png" alt="LinkedIn Profile">
+							</div>
+							<div class="contact-body">
+								<p class="alt-body-title">Github</p>
+								<a href="https://www.linkedin.com/in/pilner/" class="button-light" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+							</div>
+						</div>
+						<div class="grid-item">
+							<div class="contact-img">
+								<img src="/pics/contacts/fb.png" alt="Facebook Profile">
+							</div>
+							<div class="contact-body">
+								<p class="alt-body-title">Facebook</p>
+								<a href="https://facebook.com/hahahalatado" class="button-light" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col px-0">
-					<div class="container text-center">
-						<div class="altcard card pt-3" style="margin: auto;">
-							<img class="card-img-top" src="/pics/melodynityICON.png" alt="Card image cap" style="margin: auto;width: 50%;">
-							<div class="card-body">
-							  <h5 class="card-title">Melodynity Website</h5>
-							  <p class="card-text">A website for my music.</p>
+			</div>
+			<div class="contact-dark">
+				<div class="wrapper">
+					<div>
+						<p class="alt-topic-title">You can also reach out by:</p>
+					</div>
+					<div>
+						<div class="grid-container">
+							<div class="grid-item">
+								<div class="contact-body">
+									<p class="body-title">Email</p>
+									<button id="email" class="button-dark" name="raileyvictuelles@gmail.com"><span class="visible"><i class="fa-solid fa-envelope"></i> raileyvictuelles@gmail.com</span><span class="invisible">Copied</span></button>
+								</div>
+							</div>
+							<div class="grid-item">
+								<div class="contact-body">
+									<p class="body-title">Phone</p>
+									<button id="phone" class="button-dark" name="(+63)950-249-0986"><span class="visible"><i class="fa-solid fa-square-phone"></i> (+63)950-249-0986</span><span class="invisible">Copied</span></button>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="text-center mt-4">
-				<button class="btn btn-outline-light mx-2"><a href="#"><i class="fas fa-eye pe-2"></i>View All</a></button>
-				<button class="btn btn-outline-light mx-2"><a href="https://github.com/Pilner" target="_blank" rel="noopener noreferrer"><i class="fab fa-github pe-2"></i>Github</a></button>
-			</div>
 		</div>
-	</div>
-	<!-- WORKS -->
-	
-	<!-- INTRODUCTION -->
-	<div class="intropage">
-		<div class="container p-5">
-			<div class="">
-				<p class="text-center display-5">Enough About That. Introduce Yourself!</p>
-				<ul class="h5 mt-5">
-					<li>My name is Fabian Railey Victuelles! A programmer based in the Philippines</li>
-					<li>I am a first-year student from the Polytechnic University of the Philippines studying BS Computer Science</li>
-					<li>I am a programmer that can code on languages like JavaScript, C++, Python, and C. I can also do Full-Stack as a Web Developer with the MEN stack (MongoDB, Express.js, Node.js). I am what they call an enthusiastic coder who focuses on what needed to be fixed and developed with no loose threads attached.</li>
-					<li>I like coding.</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<!-- INTRODUCTION -->
+	</section>
 
-	<!-- TOOLS -->
-	<div class="altcolor">
-		<div class="container p-5">
-			<div>
-				<p class="h1">Proficient in:</p>
-			</div>
-
-			<div class="mt-5">
-				<div class="brighten">
-					<div class="grid-item">
-						<a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-							<img class="logoitems" src="/pics/html.svg" alt="html">
-						</a>
-					</div>
-					<div class="grid-item">
-						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-							<img class="logoitems" src="/pics/css.svg" alt="css">
-						</a>
-					</div>
-					<div class="grid-item">
-						<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-							<img class="logoitems" src="/pics/js.svg" alt="js">
-						</a>
-					</div>
-					<div class="grid-item">
-						<a href="https://nodejs.org/en/" target="_blank">
-							<img class="logoitems" src="/pics/nodejs.svg" alt="nodejs">
-						</a>
-					</div>
-					<div class="grid-item">
-						<a href="https://www.mongodb.com/" target="_blank">
-							<img class="logoitems" src="/pics/mongodb.svg" alt="mongodb">
-						</a>
-					</div>
-				</div>
-
-			</div>
-
-		</div>
-	</div>
-	<!-- TOOLS -->
-	
-	
-	<!-- MELODYNITY -->
-	<div class="melodynitypage">
-		<div class="container p-5">
-			<div>
-				<p class="h1">Check out my music!</p>
-			</div>
-			<div class="text-center py-5 melodynityimg">
-				<img src="/pics/melodynitylogo.png" alt="Melodynity Logo">
-			</div>
-			<div class="text-center melodynitybtns">
-				<button id="mdm-website" class="btn btn-outline-dark mx-2 " data-bs-toggle="popover" data-bs-placement="top" data-bs-content="There is no website yet, but you can go and check at my GitHub!"><img class="melodynityicon pe-2 mb-1" src="/pics/melodynityICON.png">Website</button>
-				<button class="btn btn-outline-dark mx-2"><a href="https://soundcloud.com/melodynity"><i class="fab fa-soundcloud pe-2"></i>Soundcloud</a></button>
-				<button class="btn btn-outline-dark mx-2"><a href="https://www.youtube.com/channel/UCQhfkcqH3_9t-DItavYGtqw"><i class="fab fa-youtube pe-2"></i>Youtube</a></button>
-			</div>
-		</div>
-	</div>
-	<!-- MELODYNITY -->
-
-	<!-- PLACEHOLDER -->
-	<div class="altcolor">
-		<div class="container p-5">
-			<div>
-				<h1>Placeholder</h1>
-			</div>
-			<div class="text-center mt-5">
-				<p class="h5">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nihil odio iusto itaque labore accusantium magni autem praesentium ex, facilis numquam, hic eveniet repudiandae quis illo maiores impedit soluta iste mollitia id. Porro excepturi cum debitis laboriosam quaerat nam nesciunt omnis possimus perspiciatis laudantium, amet vero nihil provident! Reiciendis, mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi suscipit omnis sapiente quo dolorum labore officiis veniam dolorem iure id, eos nemo eius voluptatibus tempore quidem corporis esse. Vitae tempora nam rerum ratione molestiae dolor laborum beatae eaque aut hic.
-				</p>
-			</div>
-		</div>
-	</div>
-	<!-- PLACEHOLDER -->
-
+	<!-- CONTACT -->
 
 
 
 	<!-- FOOTER -->
-	<div class="footerbg navbar-light">
-		<div class="container p-5">
-			<div class="footertext text-center">
-				<img class="navlogo mb-1" src="/pics/site-logo/FRV-4LOGO.png" alt="">
-				<p class="mt-1"><b>&copy; 2022 Copyright: <a href="/"></a></b></p>
-
+	<div class="footer">
+		<div class="container">
+			<div>
+				<img class="site-logo-sm" src="/pics/site-logo/FRV-logo-light.png" alt="">
+				<p class=""><b>&copy; 2022 Copyright: <a href="/"></a></b></p>
 			</div>
 		</div>
 	</div>
@@ -215,9 +277,11 @@
 		
 		
 		
-		
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/ad98de5722.js" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="/mainscript.js"></script>
 </body>
 </html>
