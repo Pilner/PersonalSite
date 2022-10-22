@@ -3,7 +3,7 @@ const	express		= require("express"),
 		bodyParser	= require("body-parser"),
 		app			= express(),
 		mongoose	= require("mongoose");
-		port		= 3000;
+		port		= process.env.PORT || 3000;
 
 
 app.use(bodyParser.urlencoded({extended: true}));
