@@ -1,8 +1,9 @@
 // SETUP
-var express		= require("express"),
-	bodyParser	= require("body-parser"),
-	app			= express(),
-	mongoose	= require("mongoose");
+const	express		= require("express"),
+		bodyParser	= require("body-parser"),
+		app			= express(),
+		mongoose	= require("mongoose");
+		port		= 3000;
 
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -46,6 +47,6 @@ app.get("*", (req, res) => {
 
 
 // LISTEN
-app.listen(3000, () => {
-	console.log("server starting on port 3000");
+app.listen(port, () => {
+	console.log(`Server starting on port ${port}`);
 })

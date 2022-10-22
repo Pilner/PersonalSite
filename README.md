@@ -4,7 +4,7 @@ A project to showcase my expertise in Web Development through building a Persona
 
 ## How to use
 
-*Note: Make sure you have a Node.js installed. To check, run `node -v` in your terminal*
+*Note: Make sure you have a [Node.js](https://nodejs.org/en/) installed. To check, run `node -v` in your terminal*
 
 1. First clone this git repository to your local device
 ```
@@ -16,7 +16,7 @@ npm install
 ```
 3. Run the program
 ```
-node .\app.js
+node start
 ```
 
 ## Routes
