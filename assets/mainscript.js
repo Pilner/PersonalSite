@@ -1,5 +1,5 @@
 // REQUEST
-
+//URL
 const 	githubLink	= "https://api.github.com/users/Pilner/repos",
 		errorLink	= "https://httpstat.us/404";
 
@@ -15,6 +15,17 @@ async function githubData() {
 				cardDesc	= document.querySelectorAll(".project-text"),
 				cardLink	= document.querySelectorAll(".project-link");
 			
+			// PRELOADER
+			const preloader = document.querySelector("#preloader");
+			window.scrollTo(0,0);
+			preloader.style.opacity = "0";
+			document.body.style.overflow = "auto";
+			setTimeout(()=>{
+				preloader.style.display = "none"
+			}, 2000);
+			// PRELOADER
+			
+
 			// Sorting by Updated Date - Descending
 			data = data.sort(function(a, b){return new Date(b.updated_at) - new Date(a.updated_at)});
 
@@ -37,9 +48,17 @@ async function githubData() {
 						card[i].classList.add("cpp-bg");
 						break;
 				}
-				cardTitle[i].textContent	= data[i].name;
-				cardDesc[i].textContent		= data[i].description;
-				cardLink[i].href			= data[i].html_url;
+				function template(key) {
+					return (`
+					<p class="updatedText">
+						${data[i][key]}
+					</p>
+					`)
+				}
+
+				cardTitle[i].innerHTML		= template("name");
+				cardDesc[i].innerHTML		= template("description");
+				cardLink[i].href			= template("html_url");
 			}
 		} else {
 			throw new Error(response.status)
@@ -48,8 +67,10 @@ async function githubData() {
 		console.error(err);
 	}
 }
+setTimeout(() => {
+	githubData();
 
-githubData();
+}, 0)
 
 // REQUEST
 
@@ -95,3 +116,4 @@ hiddenElements.forEach((el) => observer.observe(el));
 const hiddenElementsSlide = document.querySelectorAll(".hidden-slide");
 hiddenElementsSlide.forEach((el) => observer.observe(el));
 // SCROLL ANIMATION
+

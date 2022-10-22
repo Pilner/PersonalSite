@@ -21,7 +21,8 @@ body {
 	font-family: "Nunito", sans-serif; /* Fallback for legacy browsers */
 	width: 100%;
 	background: #FFFFFF;
-	}
+	overflow: hidden;
+}
 
 body::-webkit-scrollbar {
 	display: none;
@@ -114,14 +115,14 @@ a:hover {
 }
 
 .hero-title {
-	color: var(--sub-accent);
+	color: var(--main-accent);
 	font-size: 60px;
 	font-weight: 400;
 	text-shadow: -3px 3px 5px rgba(0, 0, 0, .3);
 	margin: 1em 0;
 }
 .hero-text {
-	color: var(--sub-accent);
+	color: var(--main-accent);
 	font-size: 25px;
 	text-shadow: -3px 3px 5px rgba(0, 0, 0, .3);
 
@@ -213,6 +214,21 @@ a:hover {
 	opacity: 1;
 }
 /* SCROLL ANIMATION */
+
+/* PRELOADER */
+#preloader {
+	background: var(--black) url("./pics/Preloader.gif") no-repeat center;
+	background-size: 10em;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}
+
+      
+/* PRELOADER */
 
 
 
@@ -317,6 +333,16 @@ a:hover {
 	background-color: var(--bg-light);
 	border-radius: 20px 20px 0 0;
 	padding: 2.5%;
+	background-position: center;
+	/* transition: 1s; */
+}
+
+.works .project-name,
+.works .project-text {
+	transition: 1s;
+}
+.updatedText {
+	transition: 1s;
 }
 
 .works .grid-container .grid-item div .works-link {
@@ -333,6 +359,7 @@ a:hover {
 
 }
 
+
 .works .container .works-buttons {
 	position: absolute;
 	left: 50%;
@@ -345,33 +372,67 @@ a:hover {
 	background-image: url("./pics/tools/png/background/js.png");
 	background-repeat: no-repeat;
 	background-size: 15%;
-	background-position: center;
+	animation: scalein 1s ease-out;
 }
 .c-bg {
 	background-image: url("./pics/tools/png/background/c.png");
 	background-repeat: no-repeat;
 	background-size: 15%;
-	background-position: center;
+	animation: scalein 1s ease-out;
 }
 .cpp-bg {
 	background-image: url("./pics/tools/png/background/cpp.png");
 	background-repeat: no-repeat;
 	background-size: 15%;
-	background-position: center;
+	animation: scalein 1s ease-out;
 }
 .html-bg {
 	background-image: url("./pics/tools/png/background/html.png");
 	background-repeat: no-repeat;
 	background-size: 15%;
-	background-position: center;
+	animation: scalein 1s ease-out;
 }
 .css-bg {
 	background-image: url("./pics/tools/png/background/css.png");
 	background-repeat: no-repeat;
 	background-size: 15%;
-	background-position: center;
+	animation: scalein 1s ease-out;
 }
 
+@keyframes scalein {
+	0% {
+		background-size: 0%;
+	}
+
+	100% {
+		background-size: 15%;
+	}
+}
+
+
+.skeleton {
+	opacity: 0.7;
+	animation: skeleton-loading 1s linear infinite alternate;
+	transition: 1s;
+}
+
+.skeleton-text {
+	width: 100%;
+	height: 1em;
+	margin: .5em 0;
+	border-radius: .25em;
+	transition: 1s;
+}
+
+@keyframes skeleton-loading {
+	0% {
+		background-color: hsl(200, 20%, 70%);
+	}
+
+	100% {
+		background-color: hsl(200, 20%, 60%);
+	}
+}
 
 /* WORKPAGE */
 
@@ -419,7 +480,6 @@ a:hover {
 	display: grid;
 	place-items: end;
 }
-
 
 /* INTRODUCTION */
 
@@ -617,3 +677,49 @@ a:hover {
 }
 
 /* FOOTER */
+
+
+
+.tooltip {
+	position: relative;
+	font-weight: 700;
+}
+
+.tooltip::before,
+.tooltip::after {
+	--arrow-size: 10px;
+	--scale: .8;
+	opacity: 0;
+	position: absolute;
+	top: -0.2rem;
+	left: 50%;
+	transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+	transition: 500ms ease-in-out;
+	transform-origin: bottom center;
+}
+.tooltip::before {
+	--translate-y: calc(-100% - var(--arrow-size));
+	color: black;
+	font-size: 15px;
+	font-weight: 700;
+	content: attr(data-tooltip);
+	border: 1px solid var(--main-accent);
+	border-radius: .3rem;
+	padding: 0.5rem;
+	width: max-content;
+	background: #FFFFFF;
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+	opacity: 1;
+	--scale: 1;
+}
+
+.tooltip::after {
+	--translate-y: calc(-1 * var(--arrow-size));
+	content: '';
+	border: var(--arrow-size) solid transparent;
+	border-top-color: black;
+	transform-origin: top center;
+}

@@ -42,7 +42,7 @@ app.get("/contact", (req, res) => {
 })
 
 app.get("*", (req, res) => {
-	res.send("Invalid Domain");
+	res.render("errorpage");
 })
 
 

@@ -22,8 +22,9 @@ node start
 ## Routes
 
 * `/` is home page
+* Anything else is an error page
 
-Since this is the revamped version, I opted to try and use the single page format instead of different links.
+Since this is the revamped version, I opted to try and use the single page format instead of the multi-page site format.
 
 ## To-Do List
 
