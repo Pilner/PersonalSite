@@ -2,6 +2,8 @@
 
 A project to showcase my expertise in Web Development through building a Personal Website.
 
+Website is up at https://raileyvictuelles.herokuapp.com/
+
 ## How to use
 
 *Note: Make sure you have a [Node.js](https://nodejs.org/en/) installed. To check, run `node -v` in your terminal*
@@ -16,7 +18,7 @@ npm install
 ```
 3. Run the program
 ```
-node start
+npm start
 ```
 
 ## Routes
