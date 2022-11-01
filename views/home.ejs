@@ -21,10 +21,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,700;0,900;1,200;1,400;1,700;1,900&display=swap" rel="stylesheet">
 	<!-- GOOGLE FONTS -->
 	
-	<!-- BOOTSTRAP 5.2.0 -->
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
-	<!-- BOOTSTRAP 5.2.0 -->
-	
 	<!-- FONT AWESOME -->
 	<script src="https://kit.fontawesome.com/ad98de5722.js" crossorigin="anonymous"></script>
 	<!-- FONT AWESOME -->
@@ -33,9 +29,31 @@
 <body>
 
 	<div id="preloader"></div>
+
+	<nav id="navbar">
+		<div id="navbar-menu" class="hidden-menu">
+			<a href="#hero-page" id="hero-menu" class="nav-button-main-light">
+				<i class="fa-solid fa-bars"></i>
+			</a>
+			<a href="#works" id="works-menu" class="nav-button-main-light">
+				<i class="fa-solid fa-diagram-project"></i>
+			</a>
+			<a href="#introduction" id="intro-menu" class="nav-button-main-light">
+				<i class="fa-solid fa-user"></i>
+			</a>
+			<a href="#tools" id="tools-menu" class="nav-button-main-light">
+				<i class="fa-solid fa-terminal"></i>
+			</a>
+			<a href="#contact" id="contact-menu" class="nav-button-main-light">
+				<i class="fa-solid fa-address-book"></i>
+			</a>
+
+			<div id="navbar-percent"></div>
+		</div>
+	</nav>
 		
 	<!-- HERO SECTION -->
-	<section class="hero-page">
+	<section id="hero-page">
 		<div class="container">
 			<div class="parallax-container" id="hero-scene">
 				<div data-depth="0.15">
@@ -51,9 +69,9 @@
 	
 	
 	<!-- WORKS -->
-	<section class="works hidden">
+	<section id="works" class="hidden">
 		<div class="spacer-1"></div>
-		<p class="alt-topic-title hidden-slide">Some of My Latest Works</p>
+		<p class="alt-topic-title hidden-slide">Some of my latest works</p>
 		<div class="container">
 			<div class="grid-container">
 				<div class="grid-item">
@@ -114,6 +132,9 @@
 							<a class="button-dark-full project-link" href="#" target="_blank" rel="noopener noreferrer">View Project</a>
 						</div>
 					</div>
+
+				</div>
+				<div class="grid-item">
 
 				</div>
 			</div>
@@ -130,8 +151,8 @@
 	
 	
 	<!-- INTRODUCTION -->
-	<secion class="introduction hidden">
-		<p class="topic-title hidden-slide">Enough About That. Introduce Yourself!</p>
+	<section id="introduction" class="hidden">
+		<p class="topic-title hidden-slide">Enough about that. Introduce Yourself!</p>
 		<div class="container">
 			<div class="grid-container">
 				<div class="grid-item">
@@ -148,13 +169,13 @@
 				</div>
 			</div>
 		</div>
-	</secion>
+	</section>
 	<!-- INTRODUCTION -->
 
 	<!-- TOOLS -->
-	<section class="tools hidden">
+	<section id="tools" class="hidden">
 		<div class="spacer-1"></div>
-		<p class="alt-topic-title hidden-slide">Proficient in:</p>
+		<p class="alt-topic-title hidden-slide">Languages and Tools:</p>
 		<div class="container">
 			<div class="grid-container-img">
 				<div class="grid-item">
@@ -222,7 +243,7 @@
 	<!-- TOOLS -->
 
 	<!-- CONTACT -->
-	<section class="contact hidden">
+	<section id="contact" class="hidden">
 		<div class="container">
 			<div class="contact-light">
 				<div>
@@ -270,13 +291,13 @@
 							<div class="grid-item">
 								<div class="contact-body">
 									<p class="body-title">Email</p>
-									<button id="email" class="button-dark tooltip" data-tooltip="Click to Copy!" name="raileyvictuelles@gmail.com"><span class="visible"><i class="fa-solid fa-envelope"></i> raileyvictuelles@gmail.com</span><span class="invisible">Copied</span></button>
+									<button id="emailButton" class="button-dark tooltip" data-tooltip="Click to Copy!" value="raileyvictuelles@gmail.com"><span class="visible"><i class="fa-solid fa-envelope"></i> raileyvictuelles@gmail.com</span><span class="invisible">Copied</span></button>
 								</div>
 							</div>
 							<div class="grid-item">
 								<div class="contact-body">
 									<p class="body-title">Phone</p>
-									<button id="phone" class="button-dark tooltip" data-tooltip="Click to Copy!" name="(+63)950-249-0986"><span class="visible"><i class="fa-solid fa-square-phone"></i> (+63)950-249-0986</span><span class="invisible">Copied</span></button>
+									<button id="phoneButton" class="button-dark tooltip" data-tooltip="Click to Copy!" value="(+63)950-249-0986"><span class="visible"><i class="fa-solid fa-square-phone"></i> (+63)950-249-0986</span><span class="invisible">Copied</span></button>
 								</div>
 							</div>
 						</div>
@@ -295,7 +316,7 @@
 		<div class="container">
 			<div>
 				<img class="site-logo-sm" src="/images/site-logo/FRV-logo-light.png" alt="">
-				<p class=""><b>&copy; 2022 Copyright: <a href="/"></a></b></p>
+				<p class=""><b>&copy; 2022<a href="/"></a></b></p>
 			</div>
 		</div>
 	</div>
@@ -307,7 +328,6 @@
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
-	<script src="https://kit.fontawesome.com/ad98de5722.js" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="javascripts/mainscript.js"></script>
 </body>

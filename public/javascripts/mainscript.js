@@ -44,9 +44,7 @@ githubRepos.then((data) => {
 	}
 	
 	// Loop over the four latest repositories to insert to HTML
-	for (let i = 0; i < 4; i++) {
-		console.log(data[i].language);
-		
+	for (let i = 0; i < 4; i++) {		
 		cardTitle[i].innerHTML		= template("name", i);
 		cardDesc[i].innerHTML		= template("description", i);
 		cardLink[i].href			= data[i].html_url;		
@@ -76,33 +74,86 @@ githubRepos.then((data) => {
 }).catch((err) => {
 	console.log(err);
 });
-
 // REQUEST
 
-// CLIPBOARD COPY
-let button = document.querySelectorAll(".contact .container .contact-dark .wrapper div .grid-container .grid-item button").forEach(button => {
-	button.addEventListener("click", () => {
-		navigator.clipboard.writeText(button.name);
-		button.querySelectorAll(".contact .container .contact-dark .wrapper div .grid-container .grid-item button span").forEach(span => {
-			span.classList.toggle("visible");
-			span.classList.toggle("invisible");
-			setTimeout((event) => {
-				span.classList.toggle("visible");
-				span.classList.toggle("invisible");
-			}, 1500);
-		});
-	});
-});
-// CLIPBOARD COPY
+// NAVBAR
+const menuChanger = new IntersectionObserver((sections) => {
+	
+	let navButton = document.querySelector("#navbar > button");
+
+	sections.forEach((section) => {
+		if (section.isIntersecting) {
+			if (section.target.id == "hero-page") {
+				console.log(Math.round(section.intersectionRatio*10)/10)
+				document.querySelector("#navbar-menu").classList.add("hidden-menu");
+				document.querySelector("#navbar-menu").classList.remove("show-menu");
+			} else {
+				document.querySelector("#navbar-menu").classList.add("show-menu");
+				document.querySelector("#navbar-menu").classList.remove("hidden-menu");
+			}
+		}
+	})
+}, {threshold: [.4]});
+
+const sections = document.querySelectorAll("section");
+sections.forEach((section) => menuChanger.observe(section));
 
 
-// PARALLAX.JS
-var scene = [document.getElementById("hero-scene"), document.getElementById("intro-pic-scene")];
+function currentScrollPercentage() {
+	let pos = Math.round(
+		(document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight)* 100
+		);
 
-scene.forEach((item) => new Parallax(item));
+	let contactMenu = document.querySelector("#contact-menu"),
+		toolsMenu = document.querySelector("#tools-menu"),
+		introMenu = document.querySelector("#intro-menu"),
+		worksMenu = document.querySelector("#works-menu"),
+		heroMenu = document.querySelector("#hero-menu");
+
+	if (pos >= 90) {
+		contactMenu.classList.add("navbar-active");
+		toolsMenu.classList.remove("navbar-active");
+		introMenu.classList.remove("navbar-active");
+		worksMenu.classList.remove("navbar-active");
+		heroMenu.classList.remove("navbar-active");
+	} else if (pos >= 65) {
+		contactMenu.classList.remove("navbar-active");
+		toolsMenu.classList.add("navbar-active");
+		introMenu.classList.remove("navbar-active");
+		worksMenu.classList.remove("navbar-active");
+		heroMenu.classList.remove("navbar-active");
+	} else if (pos >= 40) {
+		contactMenu.classList.remove("navbar-active");
+		toolsMenu.classList.remove("navbar-active");
+		introMenu.classList.add("navbar-active");
+		worksMenu.classList.remove("navbar-active");
+		heroMenu.classList.remove("navbar-active");
+	} else if (pos >= 15) {
+		contactMenu.classList.remove("navbar-active");
+		toolsMenu.classList.remove("navbar-active");
+		introMenu.classList.remove("navbar-active");
+		worksMenu.classList.add("navbar-active");
+		heroMenu.classList.remove("navbar-active");
+	} else {
+		contactMenu.classList.remove("navbar-active");
+		toolsMenu.classList.remove("navbar-active");
+		introMenu.classList.remove("navbar-active");
+		worksMenu.classList.remove("navbar-active");
+		heroMenu.classList.add("navbar-active");
+	}
+    return (pos);
+}
+
+window.addEventListener("scroll", () => {
+	document.getElementById("navbar-percent").style.height = `${currentScrollPercentage()*.9}%`;
+
+})
+
+
+// NAVBAR
 
 // SCROLL ANIMATION
-// -Make new observer that checks if content is on screen
+// Make new observer that checks if content is on screen
 const observer = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		if (entry.isIntersecting) {
@@ -118,6 +169,8 @@ const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 const hiddenElementsSlide = document.querySelectorAll(".hidden-slide");
 hiddenElementsSlide.forEach((el) => observer.observe(el));
+
+
 // SCROLL ANIMATION
 
 // PRELOADER
@@ -130,3 +183,25 @@ window.addEventListener("load", () => {
 	}, 2000);
 })
 // PRELOADER
+
+// PARALLAX.JS
+var scene = [document.getElementById("hero-scene"), document.getElementById("intro-pic-scene")];
+
+scene.forEach((item) => new Parallax(item));
+// PARALLAX.JS
+
+// CLIPBOARD COPY
+let button = document.querySelectorAll("#contact .container .contact-dark .wrapper div .grid-container .grid-item button").forEach(button => {
+	button.addEventListener("click", () => {
+		navigator.clipboard.writeText(button.value);
+		button.querySelectorAll("#contact .container .contact-dark .wrapper div .grid-container .grid-item button span").forEach(span => {
+			span.classList.toggle("visible");
+			span.classList.toggle("invisible");
+			setTimeout((event) => {
+				span.classList.toggle("visible");
+				span.classList.toggle("invisible");
+			}, 1500);
+		});
+	});
+});
+// CLIPBOARD COPY
