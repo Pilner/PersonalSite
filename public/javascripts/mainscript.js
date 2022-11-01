@@ -205,3 +205,11 @@ let button = document.querySelectorAll("#contact .container .contact-dark .wrapp
 	});
 });
 // CLIPBOARD COPY
+
+// BIRTHDAY
+let today	= new Date(),
+    bday	= new Date("March 20, 2003"),
+	age		= today.getFullYear() - bday.getFullYear();
+
+document.getElementById("age").textContent = age;
+// BIRTHDAY
