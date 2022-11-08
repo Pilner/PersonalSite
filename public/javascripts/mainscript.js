@@ -66,13 +66,16 @@ githubRepos.then((data) => {
 			case "C++":
 				card[i].classList.add("cpp-bg");
 				break;
+			case "EJS":
+				card[i].classList.add("ejs-bg");
+				break;
 			case null:
 				card[i].classList.add("pilner-bg");
 				break
 		}
 	}
 }).catch((err) => {
-	console.log(err);
+	console.error(err);
 });
 // REQUEST
 
@@ -84,7 +87,6 @@ const menuChanger = new IntersectionObserver((sections) => {
 	sections.forEach((section) => {
 		if (section.isIntersecting) {
 			if (section.target.id == "hero-page") {
-				console.log(Math.round(section.intersectionRatio*10)/10)
 				document.querySelector("#navbar-menu").classList.add("hidden-menu");
 				document.querySelector("#navbar-menu").classList.remove("show-menu");
 			} else {
@@ -145,8 +147,14 @@ function currentScrollPercentage() {
 }
 
 window.addEventListener("scroll", () => {
-	document.getElementById("navbar-percent").style.height = `${currentScrollPercentage()*.9}%`;
+	if (window.matchMedia("(max-width: 1024px)").matches) {
+		document.getElementById("navbar-percent").style.width = `${currentScrollPercentage()*.9}%`;
 
+	} else {
+
+		document.getElementById("navbar-percent").style.height = `${currentScrollPercentage()*.9}%`;
+	}
+		
 })
 
 
