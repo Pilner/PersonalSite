@@ -31,7 +31,7 @@ Since this is the revamped version, I opted to try and use the single page forma
 ## To-Do List
 
 - [x] Replace Lorem Ipsum with real text
-- [ ] Showcase Personal Projects
+- [x] Showcase Personal Projects
 - [ ] Make it Display Responsive
 - [ ] Add more stuff
 
