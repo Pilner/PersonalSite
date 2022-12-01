@@ -675,7 +675,7 @@ a:hover {
 	
 }
 #tools .container .grid-container.workspaces {
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	
 }
 
