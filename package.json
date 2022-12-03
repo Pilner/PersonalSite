@@ -4,7 +4,8 @@
   "description": "Railey's Personal Portfolio Website",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon ./app.js",
+    "build": "NODE_ENV=production node ./app.js"
   },
   "author": "railey victuelles",
   "license": "ISC",
