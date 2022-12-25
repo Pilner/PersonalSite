@@ -1,0 +1,21 @@
+@import '../base/setup.css';
+
+.footer {
+	background-color: var(--bg-dark);
+	padding: 2.5em;
+}
+
+.footer .container div {
+	text-align: center;
+}
+
+.footer .container div p {
+	color: var(--white);
+	font-family: var(--main-font);
+	font-family: "Nunito", sans-serif;
+	font-size: 12px;
+}
+
+.site-logo-sm {
+	height: 2.5em;
+}

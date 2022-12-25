@@ -1,0 +1,53 @@
+@import '../base/setup.css';
+
+#introduction {
+	margin-top: 10em;
+	height: 120vh;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	position: relative;
+
+}
+
+#introduction .grid-container {
+	grid-template-columns: 1fr 1fr;
+}
+
+
+#introduction .grid-container .grid-item {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	place-content: center;
+}
+
+#introduction .grid-container .grid-item img {
+	width: 80%;
+	height: auto;
+	position: relative;
+	box-shadow: -3px 3px 5px rgba(0, 0, 0, .3);
+}
+
+#introduction .grid-container .grid-item:last-child>#intro-pic-scene {
+	display: grid;
+	place-items: end;
+	z-index: 2;
+}
+
+#introduction #intro-pic {
+	position: relative;
+}
+
+#introduction #intro-pic-bg {
+	aspect-ratio: 1;
+	position: absolute;
+	object-fit: cover;
+	/* height: 100%; */
+	right: 5%;
+	top: 5%;
+	margin: auto;
+	z-index: 1;
+
+	filter: blur(2px);
+}

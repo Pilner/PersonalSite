@@ -1,0 +1,12 @@
+@import '../base/setup.css';
+
+#preloader {
+	background: var(--black) url("../../images/Preloader.gif") no-repeat center;
+	background-size: 10em;
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	opacity: 1;
+	transition: opacity 1s ease-in-out;
+}

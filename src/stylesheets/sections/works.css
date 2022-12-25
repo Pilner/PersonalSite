@@ -1,0 +1,205 @@
+@import '../base/setup.css';
+
+#works {
+	background-color: var(--bg-dark);
+	color: var(--bg-light);
+	/* padding: 2.5em 0; */
+	height: 120vh;
+	position: relative;
+	margin-top: 10em;
+}
+
+#works>div:nth-child(2) {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
+
+#works .grid-container {
+	grid-template-columns: 1fr 1fr;
+	column-gap: 2.5em;
+	margin: 2.5em auto;
+}
+
+
+#works .grid-container .grid-item {
+	margin: 1em 0;
+	border-radius: 10px;
+}
+
+#works .grid-container .grid-item:first-child>div {
+	margin: 2em 0;
+}
+
+#works .grid-container .grid-item:first-child>div::before {
+	opacity: 0;
+}
+
+#works .grid-container .grid-item:first-child>div::after {
+	opacity: 1;
+	transition: 1s;
+}
+
+#works .grid-container .grid-item:first-child div .works-text {
+	text-align: left;
+	background-color: var(--bg-light);
+	border-radius: 20px 20px 0 0;
+	padding: 2.5%;
+	background-position: center;
+	/* transition: 1s; */
+}
+
+#works .grid-container .grid-item:last-child {
+	background-color: var(--bg-light);
+	display: grid;
+	place-content: center;
+}
+
+#works .grid-container .grid-item:last-child p {
+	/* STILL PLANNING */
+
+}
+
+
+
+
+#works .project-name,
+#works .project-text {
+	transition: 1s;
+}
+
+.updatedText {
+	transition: 1s;
+}
+
+#works .grid-container .grid-item:first-child div .works-link {
+	background-color: #BFBFBF;
+	position: relative;
+	height: 2.5em;
+	text-align: center;
+	border-radius: 0 0 20px 20px;
+}
+
+#works .grid-container .grid-item:first-child div .works-link a {
+	display: grid;
+	place-items: center;
+
+}
+
+
+#works .container .works-buttons {
+	position: absolute;
+	left: 50%;
+	bottom: 2em;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%)
+}
+
+.js-bg {
+	background-image: url("../../images/tools/png/background/js.png");
+	background-repeat: no-repeat;
+	background-size: 15%;
+	animation: scalein 1s ease-out;
+}
+
+.ejs-bg {
+	background-image: url("../../images/tools/png/background/ejs.png");
+	background-repeat: no-repeat;
+	background-size: 15%;
+	animation: scalein 1s ease-out;
+}
+
+.c-bg {
+	background-image: url("../../images/tools/png/background/c.png");
+	background-repeat: no-repeat;
+	background-size: 15%;
+	animation: scalein 1s ease-out;
+}
+
+.cpp-bg {
+	background-image: url("../../images/tools/png/background/cpp.png");
+	background-repeat: no-repeat;
+	background-size: 15%;
+	animation: scalein 1s ease-out;
+}
+
+.html-bg {
+	background-image: url("../../images/tools/png/background/html.png");
+	background-repeat: no-repeat;
+	background-size: 15%;
+	animation: scalein 1s ease-out;
+}
+
+.css-bg {
+	background-image: url("../../images/tools/png/background/css.png");
+	background-repeat: no-repeat;
+	background-size: 15%;
+	animation: scalein 1s ease-out;
+}
+
+.lua-bg {
+	background-image: url("../../images/tools/png/background/lua.png");
+	background-repeat: no-repeat;
+	background-size: 15%;
+	animation: scalein 1s ease-out;
+}
+
+.vim-bg {
+	background-image: url("../../images/tools/png/background/vim.png");
+	background-repeat: no-repeat;
+	background-size: 15%;
+	animation: scalein 1s ease-out;
+}
+
+.pilner-bg {
+	background-image: url("../../images/tools/png/background/frv-logo.png");
+	background-repeat: no-repeat;
+	background-size: 20%;
+	animation: scalein-frv 1s ease-out;
+}
+
+@keyframes scalein {
+	0% {
+		background-size: 0%;
+	}
+
+	100% {
+		background-size: 15%;
+	}
+}
+
+@keyframes scalein-frv {
+	0% {
+		background-size: 0%;
+	}
+
+	100% {
+		background-size: 20%;
+	}
+}
+
+
+.skeleton {
+	opacity: 0.7;
+	animation: skeleton-loading 1s linear infinite alternate;
+	transition: 1s;
+}
+
+.skeleton-text {
+	width: 100%;
+	height: 1em;
+	margin: .5em 0;
+	border-radius: .25em;
+	transition: 1s;
+}
+
+@keyframes skeleton-loading {
+	0% {
+		background-color: hsl(200, 20%, 70%);
+	}
+
+	100% {
+		background-color: hsl(200, 20%, 60%);
+	}
+}

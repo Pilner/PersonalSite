@@ -1,0 +1,136 @@
+@import './typography.css';
+@import './buttons.css';
+
+
+/* VARIABLES */
+:root {
+	--main-font: "Nunito", sans-serif;
+	--bg-dark: #1d1d1d;
+	--bg-light: #DFDFDF;
+	--black: #101010;
+	--white: #EFEFEF;
+	--main-accent: #001133;
+	--sub-accent: #332200;
+}
+
+/* VARIABLES */
+
+/* SETUP */
+html,
+body,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--main-font);
+	font-family: "Nunito", sans-serif;
+	/* Fallback for legacy browsers */
+	width: 100%;
+	background: #FFFFFF;
+	position: relative;
+}
+
+body::-webkit-scrollbar {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: inherit;
+}
+
+.container {
+	/* border: 1px solid red; */
+	width: 60%;
+	/* height: 60%; */
+	margin: 0 auto;
+}
+
+.grid-container {
+	display: grid;
+}
+
+.tooltip {
+	position: relative;
+	font-weight: 700;
+}
+
+.tooltip::before,
+.tooltip::after {
+	--arrow-size: 10px;
+	--scale: .8;
+	opacity: 0;
+	position: absolute;
+	top: -0.2rem;
+	left: 50%;
+	transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+	transition: 500ms ease-in-out;
+	transform-origin: bottom center;
+}
+
+.tooltip::before {
+	--translate-y: calc(-100% - var(--arrow-size));
+	color: black;
+	font-size: 15px;
+	font-weight: 700;
+	content: attr(data-tooltip);
+	border: 1px solid var(--main-accent);
+	border-radius: .3rem;
+	padding: 0.5rem;
+	width: max-content;
+	background: #FFFFFF;
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+	opacity: 1;
+	--scale: 1;
+}
+
+.tooltip::after {
+	--translate-y: calc(-1 * var(--arrow-size));
+	content: '';
+	border: var(--arrow-size) solid transparent;
+	border-top-color: black;
+	transform-origin: top center;
+}
+
+.visible {
+	display: inline-block;
+	width: 15em;
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+.invisible {
+	display: none;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	/* animation: fadeIn 0.5s; */
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+/* SETUP */

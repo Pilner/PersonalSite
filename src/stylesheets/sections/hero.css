@@ -1,0 +1,35 @@
+@import '../base/setup.css';
+
+/* HERO SECTION */
+#hero-page {
+	text-align: center;
+	margin: 0 auto;
+	height: 100vh;
+}
+
+#hero-page > .container {
+	/* border: 1px solid black; */
+	height: 100%;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+#hero-page .container .parallax-container div>p.hero-title {
+	margin-top: 0;
+}
+
+#hero-page .container .parallax-container div>p.hero-text {
+	margin-bottom: 2.5em;
+}
+
+.parallax-container {
+	/* margin: 0 auto; */
+	width: 100%;
+}
+
+#hero-page .container .parallax-container div img.hero-logo {
+	height: 20em;
+}
+
+/* HERO SECTION */

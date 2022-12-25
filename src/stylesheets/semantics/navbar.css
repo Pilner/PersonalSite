@@ -1,0 +1,76 @@
+@import '../base/setup.css';
+
+#navbar {
+	/* background-color: red; */
+	position: fixed;
+	right: 2.5em;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 50vh;
+	z-index: 99;
+}
+
+#navbar-menu {
+	display: flex;
+	flex-direction: column;
+	/* background-color: green; */
+	height: 100%;
+	justify-content: space-between;
+	/* border: 1px solid red; */
+}
+
+#navbar-menu a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 99;
+}
+
+.navbar-active {
+	transform: scale(1.2);
+}
+
+#navbar-percent {
+	position: absolute;
+	z-index: 98;
+	opacity: 0.5;
+	top: 5%;
+	right: 50%;
+	transform: translateX(50%);
+	width: 25%;
+	border-radius: 2em;
+	border: 1px solid var(--white);
+	background-color: var(--main-accent);
+}
+
+
+.nav-button-main-light {
+	width: 3em;
+	height: 3em;
+	background: var(--bg-dark);
+	color: var(--white);
+	font-family: var(--main-font);
+	font-family: "Nunito", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 1em;
+	border: 1px solid #efefef25;
+	cursor: pointer;
+	transition: .5s ease;
+}
+
+.nav-button-main-light:hover {
+	background-color: var(--bg-light);
+	color: var(--main-accent);
+	transition: .1s;
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.nav-button-main-light:not(:hover) {
+	transition: .1s;
+}
+
+.active-menu {
+	transform: scale(1.2);
+}

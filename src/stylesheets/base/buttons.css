@@ -1,0 +1,78 @@
+.button-light {
+	padding: 10px 25px;
+	color: var(--white);
+	background: none;
+	font-family: var(--main-font);
+	font-family: "Nunito", sans-serif;
+	/* Fallback for legacy browsers */
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid var(--white);
+	border-radius: 5px;
+	margin: 0 .5em;
+	box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 255, 255, .3);
+	cursor: pointer;
+}
+
+.button-light:hover {
+	background-color: var(--bg-light);
+	color: var(--main-accent);
+	transition: .1s;
+}
+
+.button-light:not(:hover) {
+	transition: .1s;
+}
+
+.button-dark {
+	padding: 10px 25px;
+	color: var(--main-accent);
+	background: none;
+	font-family: var(--main-font);
+	font-family: "Nunito", sans-serif;
+	/* Fallback for legacy browsers */
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid var(--main-accent);
+	border-radius: 5px;
+	margin: 0 .5em;
+	box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 255, 255, .3);
+	cursor: pointer;
+}
+
+.button-dark:hover {
+	background-color: var(--main-accent);
+	color: var(--white);
+	transition: .1s;
+}
+
+.button-dark:not(:hover) {
+	transition: .1s;
+}
+
+.button-dark-full {
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: var(--main-accent);
+	background: none;
+	font-family: var(--main-font);
+	font-family: "Nunito", sans-serif;
+	/* Fallback for legacy browsers */
+	font-size: 16px;
+	font-weight: 400;
+	border-radius: 5px;
+	border-radius: 0 0 20px 20px;
+	box-shadow: 1px 1px 18px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 255, 255, .3);
+	cursor: pointer;
+}
+
+.button-dark-full:hover {
+	background-color: var(--main-accent);
+	color: var(--white);
+	transition: .1s;
+}
+
+.button-dark-full:not(:hover) {
+	transition: .1s;
+}

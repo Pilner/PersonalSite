@@ -1,0 +1,88 @@
+@import '../base/setup.css';
+
+#contact {
+	background-color: var(--bg-light);
+	height: 100vh;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+
+	/* padding: 2.5em 0; */
+}
+
+#contact .container div>p.topic-title,
+#contact .container div>p.alt-topic-title {
+	text-align: center;
+}
+
+#contact .container .contact-light div .grid-container {
+	padding: 3em 0;
+	border-radius: 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 0 20px;
+	justify-items: start;
+}
+
+#contact .container .contact-light div .grid-container .grid-item {
+	margin: 0 auto;
+	background-color: var(--bg-dark);
+	padding: 1em 2em 2.5em 2em;
+	border-radius: 10px;
+}
+
+#contact .container .contact-light div .grid-container .grid-item .contact-img {
+	height: 70%;
+}
+
+#contact .container .contact-light div .grid-container .grid-item .contact-body {
+	height: 30%;
+	text-align: center;
+}
+
+#contact .container .contact-light div .grid-container .grid-item .contact-img img {
+	object-fit: contain;
+	height: 100%;
+	width: 100%;
+}
+
+#contact .container .contact-light div .grid-container .grid-item .contact-body p.alt-body-title {
+	margin-top: .5em;
+}
+
+#contact .container .contact-light div .grid-container .grid-item .contact-body a {
+	display: inline-block;
+	margin-bottom: 5em;
+	width: max-content;
+}
+
+
+
+#contact .container .contact-dark .wrapper {
+	background-color: var(--bg-dark);
+	border-radius: 10px;
+}
+
+#contact .container .contact-dark .wrapper div .grid-container {
+	grid-template-columns: 1fr 1fr;
+	gap: 0 20px;
+	padding: 3em 0;
+	border-radius: 20px;
+	justify-items: center;
+}
+
+#contact .container .contact-dark .wrapper div .grid-container .grid-item {
+	background-color: var(--bg-light);
+	padding: 1em 2em 2.5em 2em;
+	border-radius: 10px;
+	max-width: 90%;
+	/* margin: 0 2.5em; */
+	text-align: center;
+}
+
+#contact .container .contact-dark .wrapper div .grid-container .grid-item .contact-body p.body-title {
+	margin-top: .5em;
+}
+
+#contact .container .contact-dark .wrapper div p.alt-topic-title {
+	padding-top: .5em;
+}
