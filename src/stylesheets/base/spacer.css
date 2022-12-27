@@ -1,0 +1,26 @@
+/* SPACER */
+.spacer-1 {
+	aspect-ratio: 960/100;
+	width: 100%;
+	background-image: url(../../images/background/bg-transition-1.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	z-index: 1;
+	transform: translateY(-100%);
+}
+
+.spacer-2 {
+	aspect-ratio: 960/100;
+	width: 100%;
+	background-image: url(../../images/background/bg-transition-2.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	z-index: 1;
+	/* bottom: -12em; */
+}
+
+/* SPACER */

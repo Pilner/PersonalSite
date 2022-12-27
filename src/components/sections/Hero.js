@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeroLogo from '../../images/site-logo/FRV-4LOGO.png';
 import '../../stylesheets/sections/hero.css';
 
 const Hero = () => {
+  useEffect(() => {
+    // PARALLAX.JS
+    var scene = [document.getElementById("hero-scene"), document.getElementById("intro-pic-scene")];
+
+    scene.forEach((item) => new Parallax(item));
+    // PARALLAX.JS
+
+  })
   return (
     <section id="hero-page">
       <div className="container">
@@ -19,11 +27,6 @@ const Hero = () => {
   );
 }
 
-// PARALLAX.JS
-// var scene = [document.getElementById("hero-scene"), document.getElementById("intro-pic-scene")];
-
-// scene.forEach((item) => new Parallax(item));
-// PARALLAX.JS
 
 
 export default Hero

@@ -9,7 +9,7 @@ import ExpressLogo from '../../images/tools/png/express.png';
 import NodeLogo from '../../images/tools/svg/nodejs.svg';
 import WindowsLogo from '../../images/tools/svg/windows.svg';
 import VSCodeLogo from '../../images/tools/svg/vscode.svg';
-// import VimLogo from '../../images/tools/svg/vim.svg';
+import VimLogo from '../../images/tools/png/vim.png';
 import WSLLogo from '../../images/tools/svg/linux.svg';
 
 
@@ -25,22 +25,22 @@ const Tools = () => {
 						  <p className="body-title"><span className="tooltip" data-tooltip="Sets of syntactic instructions to program applications">Languages</span></p>
 					  </div>
 					  <div className="grid-item">
-						  <a href="https://www.javascript.com/" target="_blank">
+						  <a href="https://www.javascript.com/" target="_blank" rel='noreferrer'>
 							  <img className="tool-items" src={JSLogo} alt="javascript"/>
 						  </a>
 					  </div>
 					  <div className="grid-item">
-						  <a href="https://www.open-std.org/jtc1/sc22/wg14/" target="_blank">
+						  <a href="https://www.open-std.org/jtc1/sc22/wg14/" target="_blank" rel='noreferrer'>
 							  <img className="tool-items" src={CLogo} alt="C"/>
 						  </a>
 					  </div>
 					  <div className="grid-item">
-						  <a href="https://cplusplus.com/" target="_blank">
+						  <a href="https://cplusplus.com/" target="_blank" rel='noreferrer'>
 							  <img className="tool-items" src={CPPLogo} alt="C++"/>
 						  </a>
 					  </div>
 					  <div className="grid-item">
-						  <a href="https://www.java.com/en/" target="_blank">
+						  <a href="https://www.java.com/en/" target="_blank" rel='noreferrer'>
 							  <img className="tool-items" src={JavaLogo} alt="java"/>
 						  </a>
 					  </div>
@@ -50,17 +50,17 @@ const Tools = () => {
 						  <p className="body-title"><span className="tooltip" data-tooltip="Combination of technologies that completely build and run applications">Stacks</span></p>
 					  </div>
 					  <div className="grid-item">
-						  <a href="https://www.mongodb.com/" target="_blank">
+						  <a href="https://www.mongodb.com/" target="_blank" rel='noreferrer'>
 							  <img className="tool-items" src={MongoDBLogo} alt="mongodb"/>
 						  </a>
 					  </div>
 					  <div className="grid-item">
-						  <a href="https://expressjs.com/" target="_blank">
+						  <a href="https://expressjs.com/" target="_blank" rel='noreferrer'>
 							  <img className="tool-items" src={ExpressLogo} alt="ExpressJS"/>
 						  </a>
 					  </div>
 					  <div className="grid-item">
-						  <a href="https://nodejs.org/en/" target="_blank">
+						  <a href="https://nodejs.org/en/" target="_blank" rel='noreferrer'>
 							  <img className="tool-items" src={NodeLogo} alt="NodeJS"/>
 						  </a>
 					  </div>
@@ -70,22 +70,22 @@ const Tools = () => {
 						  <p className="body-title"><span className="tooltip" data-tooltip="Technologies I use to get the job done">Workspaces</span></p>
 					  </div>
 					  <div className="grid-item">
-						  <a href="https://www.microsoft.com/en-us/windows" target="_blank">
+						  <a href="https://www.microsoft.com/en-us/windows" target="_blank" rel='noreferrer'>
 							  <img className="tool-items" src={WindowsLogo} alt="Windows"/>
 						  </a>
 					  </div>
 					  <div className="grid-item">
-						  <a href="https://code.visualstudio.com/" target="_blank">
+						  <a href="https://code.visualstudio.com/" target="_blank" rel='noreferrer'>
 							  <img className="tool-items" src={VSCodeLogo} alt="VS Code"/>
 						  </a>
 					  </div>
 					  <div className="grid-item">
-						  <a href="https://www.vim.org/" target="_blank">
-							  <img className="tool-items" src="/images/tools/svg/vim.svg" alt="Vim"/>
+						  <a href="https://www.vim.org/" target="_blank" rel='noreferrer'>
+							  <img className="tool-items" src={VimLogo} alt="Vim"/>
 						  </a>
 					  </div>
 					  <div className="grid-item">
-						  <a href="https://ubuntu.com/wsl" target="_blank">
+						  <a href="https://ubuntu.com/wsl" target="_blank" rel='noreferrer'>
 							  <img className="tool-items" src={WSLLogo} alt="WSL"/>
 						  </a>
 					  </div>

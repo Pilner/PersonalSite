@@ -1,19 +1,24 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import '../../stylesheets/semantics/preloader.css';
 
 const Preloader = () => {
-  return (null
-  )
-}
+	const ref = useRef(null);
 
-// const preloader = document.querySelector("#preloader");
-// window.addEventListener("load", () => {
-// 	preloader.style.opacity = "0";
-// 	document.body.style.overflow = "auto";
-// 	setTimeout(() => {
-// 		preloader.style.display = "none"
-// 	}, 2000);
-// })
+	useEffect(() => {
+		const preloader = ref.current;
+		window.addEventListener("load", () => {
+			preloader.style.opacity = "0";
+			document.body.style.overflow = "auto";
+			setTimeout(() => {
+				preloader.style.display = "none"
+			}, 2000);
+		});
+	})
+
+	return (
+		<div id="preloader" ref={ref}></div>
+	)
+}
 
 
 export default Preloader

@@ -1,10 +1,32 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import '../../stylesheets/sections/contacts.css';
 import GitHubPicture from '../../images/contacts/github.png'
 import LinkedInPicture from '../../images/contacts/linkedin.png'
 import FacebookPicture from '../../images/contacts/fb.png'
 
 const Contact = () => {
+
+	// useEffect(() => {
+	// 	let buttons = document.querySelectorAll("#contact .container .contact-dark .wrapper div .grid-container .grid-item button")
+
+	// 	buttons.forEach(button => {
+	// 		// console.log(button)
+	// 		button.addEventListener("click", () => {
+	// 			console.log(button.value)
+	// 			navigator.clipboard.writeText(button.value);
+	// 			button.querySelectorAll("#contact .container .contact-dark .wrapper div .grid-container .grid-item button span").forEach(span => {
+	// 				span.classList.toggle("visible");
+	// 				span.classList.toggle("invisible");
+	// 				setTimeout(() => {
+	// 					span.classList.toggle("visible");
+	// 					span.classList.toggle("invisible");
+	// 				}, 1500);
+	// 			});
+	// 		});
+	// 	});
+
+	// })
+
   return (
 	  <section id="contact" className="hidden">
 		  <div className="container">
@@ -71,5 +93,9 @@ const Contact = () => {
 	  </section>
   )
 }
+
+// CLIPBOARD COPY
+// CLIPBOARD COPY
+
 
 export default Contact

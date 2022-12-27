@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../stylesheets/sections/introduction.css';
 import SelfPicture from '../../images/self-pictures/introduction-pic2.jpg';
-// import IntroBG from '../../images/background/intro-pic-bg.svg'
+import IntroBG from '../../images/background/intro-pic-bg.svg'
 
 
 const Introduction = () => {
@@ -21,7 +21,7 @@ const Introduction = () => {
 					  <div id="intro-pic-scene">
 						  <img id="intro-pic" data-depth="0.15" src={SelfPicture} alt=""/>
 					  </div>
-					  {/* <img id="intro-pic-bg" src={IntroBG} alt=""/> */}
+					  <img id="intro-pic-bg" src={IntroBG} alt=""/>
 				  </div>
 			  </div>
 		  </div>
