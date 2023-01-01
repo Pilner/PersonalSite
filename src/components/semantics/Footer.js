@@ -8,7 +8,7 @@ const Footer = () => {
 			<div className="container">
 				<div>
 					<img className="site-logo-sm" src={SiteLogo} alt=""/>
-						<p className=""><b>&copy; 2022<a href="/"></a></b></p>
+					<p><b>&copy; 2022 <a href="https://raileyvictuelles.herokuapp.com/">Railey Victuelles</a></b></p>
 				</div>
 			</div>
 		</div>

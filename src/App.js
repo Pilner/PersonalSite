@@ -14,7 +14,7 @@ function App() {
 		// Make new observer that checks if content is on screen
 		const observer = new IntersectionObserver((entries) => {
 			entries.forEach((entry) => {
-				console.log(entry.target);
+				// console.log(entry.target);
 				if (entry.isIntersecting) {
 					if (entry.target.classList.contains("hidden")) {
 						entry.target.classList.add("show");

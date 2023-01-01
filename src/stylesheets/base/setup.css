@@ -89,7 +89,7 @@ a:hover {
 	font-size: 15px;
 	font-weight: 700;
 	content: attr(data-tooltip);
-	border: 1px solid var(--main-accent);
+	border: 1px solid gray;
 	border-radius: .3rem;
 	padding: 0.5rem;
 	width: max-content;
@@ -106,7 +106,7 @@ a:hover {
 	--translate-y: calc(-1 * var(--arrow-size));
 	content: '';
 	border: var(--arrow-size) solid transparent;
-	border-top-color: black;
+	border-top-color: gray;
 	transform-origin: top center;
 }
 

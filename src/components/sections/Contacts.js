@@ -6,26 +6,26 @@ import FacebookPicture from '../../images/contacts/fb.png'
 
 const Contact = () => {
 
-	// useEffect(() => {
-	// 	let buttons = document.querySelectorAll("#contact .container .contact-dark .wrapper div .grid-container .grid-item button")
+	useEffect(() => {
+		let buttons = document.querySelectorAll("#contact .container .contact-dark .wrapper div .grid-container .grid-item button")
 
-	// 	buttons.forEach(button => {
-	// 		// console.log(button)
-	// 		button.addEventListener("click", () => {
-	// 			console.log(button.value)
-	// 			navigator.clipboard.writeText(button.value);
-	// 			button.querySelectorAll("#contact .container .contact-dark .wrapper div .grid-container .grid-item button span").forEach(span => {
-	// 				span.classList.toggle("visible");
-	// 				span.classList.toggle("invisible");
-	// 				setTimeout(() => {
-	// 					span.classList.toggle("visible");
-	// 					span.classList.toggle("invisible");
-	// 				}, 1500);
-	// 			});
-	// 		});
-	// 	});
+		buttons.forEach(button => {
+			// console.log(button)
+			button.addEventListener("click", () => {
+				console.log(button.value)
+				navigator.clipboard.writeText(button.value);
+				button.querySelectorAll("#contact .container .contact-dark .wrapper div .grid-container .grid-item button span").forEach(span => {
+					span.classList.toggle("visible");
+					span.classList.toggle("invisible");
+					setTimeout(() => {
+						span.classList.toggle("visible");
+						span.classList.toggle("invisible");
+					}, 1500);
+				});
+			});
+		});
 
-	// })
+	})
 
   return (
 	  <section id="contact" className="hidden">

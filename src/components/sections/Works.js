@@ -4,8 +4,8 @@ import '../../stylesheets/sections/works.css';
 const Works = () => {
 	useEffect(() => {
 		//URL
-		const githubLink = "https://api.github.com/users/Pilner/repos",
-			errorLink = "https://httpstat.us/404";
+		const githubLink = "https://api.github.com/users/Pilner/repos";
+		// const errorLink = "https://httpstat.us/404";
 
 		let githubRepos;
 
@@ -108,7 +108,7 @@ const Works = () => {
 								</ul>
 							</div>
 							<div className="works-link">
-								<a className="button-dark-full project-link" href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+								<a className="button-dark-full project-link" href="/" target="_blank" rel="noopener noreferrer">View Project</a>
 							</div>
 						</div>
 						<div className="hidden">
@@ -122,7 +122,7 @@ const Works = () => {
 								</ul>
 							</div>
 							<div className="works-link">
-								<a className="button-dark-full project-link" href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+								<a className="button-dark-full project-link" href="/" target="_blank" rel="noopener noreferrer">View Project</a>
 							</div>
 						</div>
 						<div className="hidden">
@@ -136,7 +136,7 @@ const Works = () => {
 								</ul>
 							</div>
 							<div className="works-link">
-								<a className="button-dark-full project-link" href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+								<a className="button-dark-full project-link" href="/" target="_blank" rel="noopener noreferrer">View Project</a>
 							</div>
 						</div>
 						<div className="hidden">
@@ -150,7 +150,7 @@ const Works = () => {
 								</ul>
 							</div>
 							<div className="works-link">
-								<a className="button-dark-full project-link" href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+								<a className="button-dark-full project-link" href="/" target="_blank" rel="noopener noreferrer">View Project</a>
 							</div>
 						</div>
 	

@@ -37,16 +37,16 @@
 
 #introduction #intro-pic {
 	position: relative;
+	z-index: 2;
 }
 
 #introduction #intro-pic-bg {
 	position: absolute;
-	width: 24%;
 	aspect-ratio: 1;
 	object-fit: cover;
 	margin: auto;
-	top: 34%;
-	right: 21%;
+	top: 5%;
+	right: 5%;
 	z-index: 1;
 
 	filter: blur(2px);
