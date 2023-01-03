@@ -134,4 +134,31 @@ a:hover {
 	}
 }
 
+/* SCROLL ANIMATION */
+.hidden {
+	opacity: 0;
+	filter: blur(2px);
+	transition: 1.5s;
+}
+
+.show {
+	filter: blur(0);
+	opacity: 1;
+}
+
+.hidden-slide {
+	opacity: 0;
+	filter: blur(5px);
+	transform: translateX(-100%);
+	transition: all 1.5s ease-out;
+}
+
+.show-slide {
+	transform: translateX(0);
+	filter: blur(0);
+	opacity: 1;
+}
+
+/* SCROLL ANIMATION */
+
 /* SETUP */
