@@ -30,7 +30,8 @@ function App() {
     hiddenElementsSlide.forEach((el) => observer.observe(el));
     // SCROLL ANIMATION
 
-  })
+  }, []);
+
   return (
     <Fragment>
       <Preloader />
